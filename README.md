@@ -21,6 +21,7 @@ References:
 - `git init`
 - `yarn init -y`
 - `yarn add --dev hardhat`
+- `yarn add --dev prettier prettier-plugin-solidity`
 - `yarn hardhat`
 
 ```txt
@@ -33,3 +34,20 @@ Give Hardhat a star on Github if you're enjoying it! 💞✨
 
 https://github.com/NomicFoundation/hardhat
 ```
+
+## ERC 20 Contract
+
+In a manual version we have to code everything the standard defines.
+
+- `contracts/ManualToken.sol`
+
+But we can use openzeppelin to reference the standard and work on top of it.
+
+Openzeppelin ERC20: <https://docs.openzeppelin.com/contracts/4.x/erc20>
+
+- `yarn add --dev @openzeppelin/contracts`
+- `contracts/OurToken.sol`
+
+## Next
+
+Deployment and tests are implemented in `typescript` branch.

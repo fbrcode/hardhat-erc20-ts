@@ -5,6 +5,9 @@
   "author": "fbrcode <fabio.bressler@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "hardhat": "^2.10.1"
+    "@openzeppelin/contracts": "^4.7.1",
+    "hardhat": "^2.10.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.23"
   }
 }
