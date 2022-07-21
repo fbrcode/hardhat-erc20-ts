@@ -87,3 +87,9 @@ And import it in `hardhat.config.ts`:
 ```ts
 import 'hardhat-deploy';
 ```
+
+## Testing
+
+Add test packages:
+
+`yarn add --dev chai @types/chai @types/mocha`
