@@ -75,3 +75,15 @@ Install typescript packages:
 Use **typechain** to generate types to contract compiled code.
 
 `yarn add --dev typechain @typechain/hardhat @typechain/ethers-v5 @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle`
+
+## Configure Hardhat Deploy
+
+In order to use hardhat deployment feature, add the following packages:
+
+`yarn add --dev hardhat-deploy @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers`
+
+And import it in `hardhat.config.ts`:
+
+```ts
+import 'hardhat-deploy';
+```
