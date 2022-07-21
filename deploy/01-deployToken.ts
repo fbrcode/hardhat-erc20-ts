@@ -1,5 +1,5 @@
 import { DeployFunction } from 'hardhat-deploy/types';
-import { HardhatRuntimeEnvironment } from 'hardhat/types'; // from ./node_modules/hardhat-deploy/types.ts
+import { HardhatRuntimeEnvironment } from 'hardhat/types';
 
 const deployToken: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const contractName = 'OurToken';
