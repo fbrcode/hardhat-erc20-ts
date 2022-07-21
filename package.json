@@ -4,6 +4,13 @@
   "main": "index.js",
   "author": "fbrcode <fabio.bressler@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "refresh": "yarn clean && yarn compile",
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy",
+    "test": "hardhat test"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@0.3.0-beta.12",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
