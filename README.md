@@ -51,3 +51,27 @@ Openzeppelin ERC20: <https://docs.openzeppelin.com/contracts/4.x/erc20>
 ## Next
 
 Deployment and tests are implemented in `typescript` branch.
+
+## Typescript Changes
+
+Rename `hardhat.config.js` to `hardhat.config.ts` and update the content to use types:
+
+```ts
+import { HardhatUserConfig } from 'hardhat/config';
+
+const config: HardhatUserConfig = {
+  solidity: '0.8.7',
+};
+
+export default config;
+```
+
+Install typescript packages:
+
+`yarn add --dev typescript ts-node @types/node`
+
+### Typechain
+
+Use **typechain** to generate types to contract compiled code.
+
+`yarn add --dev typechain @typechain/hardhat @typechain/ethers-v5 @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle`
