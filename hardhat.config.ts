@@ -1,7 +1,12 @@
+// for typechain
 import '@typechain/hardhat';
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
 
+// for hardhat-deploy task
+import 'hardhat-deploy';
+
+// to reference config type
 import { HardhatUserConfig } from 'hardhat/config';
 
 const config: HardhatUserConfig = {
